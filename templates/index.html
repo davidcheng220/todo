@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block title %}
+    <title>Todo list</title>
+{% endblock %}
+{% block body %}
+    <h1>To Do List</h1>
+    <ul>
+        {% for row in rows %}
+        <li>
+            {{ row["task"] }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/add">Add task</a>
+{% endblock%}
