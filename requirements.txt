@@ -2,4 +2,3 @@ Flask
 gunicorn
 cs50
 SQL
-redirect
